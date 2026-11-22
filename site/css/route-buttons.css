@@ -1,0 +1,38 @@
+.btn-plan.is-added {
+  background: #1B4332;
+  color: #FFFFFF;
+  border-color: #1B4332;
+}
+.btn-plan.is-added:hover {
+  background: #163728;
+  border-color: #163728;
+}
+.btn-fav.is-favorite {
+  background: #FDF2F3;
+  color: #C44755;
+  border-color: #F5D0D5;
+}
+.btn-fav.is-favorite:hover {
+  background: #FCE8EA;
+  border-color: #F0C4CA;
+}
+.route-hero-actions .btn-plan.is-added {
+  background: #1B4332;
+  color: #FFFFFF;
+  border-color: #1B4332;
+}
+.route-hero-actions .btn-fav.is-favorite {
+  background: #FDF2F3;
+  color: #C44755;
+  border-color: #F5D0D5;
+}
+.btn-plan:active, .btn-fav:active {
+  transform: scale(0.98);
+}
+.btn-plan.is-loading, .btn-fav.is-loading {
+  opacity: 0.7;
+  cursor: wait;
+}
+.btn-plan:disabled, .btn-fav:disabled {
+  pointer-events: none;
+}

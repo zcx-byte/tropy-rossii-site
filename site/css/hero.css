@@ -1,0 +1,141 @@
+/* Верхний блок главной страницы. */
+.home-hero {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(110deg, #1d4736 0%, #2e6950 72%, #34775b 100%);
+  color: #fff;
+}
+
+.home-hero-inner {
+  position: relative;
+  max-width: 1280px;
+  min-height: 330px;
+  margin: 0 auto;
+  padding: 45px 56px 42px;
+  display: flex;
+  align-items: center;
+}
+
+.home-hero-copy {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 640px);
+}
+
+.home-hero h1 {
+  font-family: 'Manrope', sans-serif;
+  font-size: clamp(1.65rem, 3vw, 2.55rem);
+  line-height: 1.18;
+  font-weight: 800;
+  letter-spacing: -0.035em;
+}
+
+.home-hero p {
+  margin-top: 12px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.home-hero-search {
+  display: flex;
+  align-items: center;
+  width: min(100%, 570px);
+  margin-top: 25px;
+  padding: 5px;
+  background: #fff;
+  border-radius: 12px;
+  gap: 8px;
+}
+
+.home-hero-search input {
+  flex: 1;
+  min-width: 0;
+  padding: 12px 14px;
+  border: 0;
+  outline-offset: 2px;
+  font: inherit;
+  color: #1a1a1a;
+  background: transparent;
+}
+
+.home-hero-search input::placeholder {
+  color: #84919a;
+  font-size: 0.85rem;
+}
+
+.home-hero-search button {
+  padding: 12px 22px;
+  border-radius: 8px;
+  background: #2d6a4f;
+  color: white;
+  font-weight: 600;
+}
+
+.home-hero-search button:hover {
+  background: #1b4332;
+}
+
+.home-hero-mountain {
+  position: absolute;
+  right: -80px;
+  bottom: -10px;
+  width: min(54%, 650px);
+  max-width: none;
+  max-height: 100%;
+  object-fit: contain;
+  object-position: bottom right;
+  pointer-events: none;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 800px) {
+  .home-hero-inner {
+    min-height: 300px;
+    padding: 38px 24px;
+  }
+
+  .home-hero-copy {
+    width: min(100%, 570px);
+  }
+
+  .home-hero-mountain {
+    width: 62%;
+    opacity: 0.4;
+  }
+}
+
+@media (max-width: 540px) {
+  .home-hero-inner {
+    min-height: 310px;
+    padding: 32px 20px;
+  }
+
+  .home-hero-mountain {
+    width: 95%;
+    opacity: 0.22;
+  }
+
+  .home-hero h1 {
+    font-size: 1.7rem;
+  }
+
+  .hero-desktop-break {
+    display: none;
+  }
+
+  .home-hero-search button {
+    padding: 12px 15px;
+  }
+}

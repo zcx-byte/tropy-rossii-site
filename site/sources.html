@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Источники данных — Тропы России</title>
+    <meta name="description" content="Откуда берётся информация о маршрутах на сайте «Тропы России»." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-inner">
+        <a href="index.html" class="logo">
+          <span class="logo-mark">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 19 L8.5 9 L11 13.5 L14.5 6 L21 19"/>
+              <path d="M3 19 H21"/>
+              <path d="M9.5 19 C11 15.5 12 13.5 13 13 C14 12.5 14.8 14.2 16 17"/>
+            </svg>
+          </span>
+          Тропы России
+        </a>
+
+        <nav class="nav">
+          <a href="index.html">Маршруты</a>
+          <a href="beginners.html">Для новичков</a>
+          <a href="safety.html">Безопасность</a>
+        </nav>
+
+        <div class="header-actions">
+          <button class="btn btn-ghost" type="button" data-auth-control>Войти</button>
+          <a href="account.html#plan" class="btn btn-primary" data-account-link>Мой план</a>
+          <button class="menu-btn" aria-label="Открыть меню">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="content-page">
+      <div class="content-container">
+        <div class="content-hero">
+          <div class="content-kicker">ПРОЗРАЧНОСТЬ</div>
+          <h1>Источники данных</h1>
+          <p>Мы стремимся к актуальности и открытости. Вот откуда берётся информация на сайте.</p>
+        </div>
+
+        <section class="content-section">
+          <h2>Откуда информация</h2>
+          <p>Данные о маршрутах собираются из открытых источников, отзывов туристов, официальных материалов ООПТ и информации от волонтёров.</p>
+        </section>
+
+        <section class="content-section">
+          <h2>Важное замечание</h2>
+          <p>Мы стараемся поддерживать данные в актуальном состоянии, но условия на маршрутах могут меняться. Перед походом всегда проверяйте:</p>
+          <ul>
+            <li>актуальную погоду</li>
+            <li>возможные ограничения и закрытия</li>
+            <li>состояние тропы</li>
+          </ul>
+        </section>
+
+        <div class="content-highlight">
+          <p>Если вы заметили неточность — напишите нам через страницу «Контакты». Мы оперативно проверим и обновим информацию.</p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <div class="logo">
+              <span class="logo-mark">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" width="20" height="20" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 19 L8.5 9 L11 13.5 L14.5 6 L21 19"/>
+                  <path d="M3 19 H21"/>
+                  <path d="M9.5 19 C11 15.5 12 13.5 13 13 C14 12.5 14.8 14.2 16 17"/>
+                </svg>
+              </span>
+              Тропы России
+            </div>
+            <p>Помогаем безопасно выбирать и планировать пешие маршруты по всей России. Актуальная информация, карты и снаряжение.</p>
+          </div>
+          <div class="footer-col">
+            <h4>Разделы и полезное</h4>
+            <a href="index.html">Каталог маршрутов</a>
+            <a href="beginners.html">Для новичков</a>
+            <a href="safety.html">Безопасность</a>
+            <a href="how-to-choose.html">Как выбрать маршрут</a>
+            <a href="emergency.html">Экстренные контакты</a>
+          </div>
+          <div class="footer-col">
+            <h4>О проекте</h4>
+            <a href="about.html">О нас</a>
+            <a href="sources.html">Источники данных</a>
+            <a href="contacts.html">Контакты</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 Тропы России · Волонтёрский проект</span>
+          <span>Сделано с заботой о природе</span>
+        </div>
+      </div>
+    </footer>
+
+    <link rel="stylesheet" href="css/trail-assistant.css" />
+    <button id="trail-chat-button" type="button" aria-label="Открыть помощника" title="Подобрать маршрут">?</button>
+    <section id="trail-chat-window" aria-label="Помощник по маршрутам" aria-hidden="true">
+      <header id="trail-chat-header">
+        <div>
+          <strong>Помощник по маршрутам</strong>
+          <small>ИИ-консультант по маршрутам</small>
+        </div>
+        <button id="trail-chat-close" type="button" aria-label="Закрыть чат">×</button>
+      </header>
+      <div id="trail-chat-messages" aria-live="polite">
+        <div class="trail-msg bot">Привет! Я ИИ-помощник сайта «Тропы России». Могу помочь подобрать маршрут, рассказать о подготовке и снаряжении. Что тебя интересует?</div>
+        <div class="trail-quick-replies">
+          <button type="button" data-prompt="Я новичок, хочу лёгкий маршрут на несколько часов">Я новичок</button>
+          <button type="button" data-prompt="У меня средний опыт, хочу поход на целый день">Есть опыт</button>
+          <button type="button" data-prompt="Ищу сложный многодневный поход">Многодневный поход</button>
+        </div>
+      </div>
+      <form id="trail-chat-input-area">
+        <input id="trail-chat-input" type="text" autocomplete="off" placeholder="Например: лёгкий маршрут до 10 км..." aria-label="Ваш вопрос" />
+        <button id="trail-chat-send" type="submit" aria-label="Отправить">➤</button>
+      </form>
+      <div class="trail-chat-footnote">Ответы формируются ИИ. Проверяй актуальные погоду, ограничения и состояние маршрута перед походом.</div>
+    </section>
+    <script src="js/trail-assistant.js" defer></script>
+    <script src="js/auth.js" defer></script>
+    <script src="js/mobile-nav.js" defer></script>
+  </body>
+</html>

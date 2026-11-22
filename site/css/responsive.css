@@ -1,0 +1,51 @@
+@media (max-width: 960px) {
+  .main-inner {
+    grid-template-columns: 1fr;
+  }
+  .sidebar {
+    position: static;
+    order: -1;
+  }
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+  }
+  .route-hero {
+    grid-template-columns: 1fr;
+  }
+  .route-body {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 640px) {
+  .nav {
+    display: none;
+  }
+  .menu-btn {
+    display: block;
+  }
+  .header-actions .btn-ghost {
+    display: none;
+  }
+  .content-title {
+    font-size: 1.4rem;
+  }
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .routes-grid {
+    grid-template-columns: 1fr;
+  }
+  .route-photo {
+    aspect-ratio: 16 / 9;
+  }
+  .route-title {
+    font-size: 1.6rem;
+  }
+  .route-stats-grid {
+    grid-template-columns: 1fr;
+  }
+  .route-tabs {
+    width: 100%;
+  }
+}
