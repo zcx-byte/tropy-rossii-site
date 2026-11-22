@@ -15,8 +15,6 @@ site/chat-history/
 
 config.txt
 
-certs/
-*.pem
 *.key
 *.p12
 
